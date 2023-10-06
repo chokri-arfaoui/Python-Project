@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HOME CHEF</title>
+    <link rel="icon" href="img/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/bootstrap.min.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/animate.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/owl.carousel.min.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/themify-icons.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/flaticon.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/magnific-popup.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/slick.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/gijgo.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/nice-select.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/all.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <!-- style CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/style.css') }}">
+</head>
+
+<body>
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="/signup">
+                            <img src="{{url_for('static', filename='/img/logo.png')}}" style="height: 100px;" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/chefs">Chefs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/food_menu">Menu</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_btn">
+                            <a href="/login" class="btn_1 d-none d-sm-block">login</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="regervation_part section_padding" style="margin-top: 140px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="section_tittle">
+                        <h2>Sign-Up</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="regervation_part_iner">
+                        <form action="/users/create" method="post">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="First Name *"
+                                        name="first_name">
+                                    {% if 'first_name' in flash_messages %}
+                                    <p class="text-danger">{{ flash_messages['first_name'] }}</p>
+                                    {% endif %}
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Last Name *"
+                                        name="last_name">
+                                    {% if 'last_name' in flash_messages %}
+                                    <p class="text-danger">{{ flash_messages['last_name'] }}</p>
+                                    {% endif %}
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Email address *"
+                                        name="email">
+                                    {% if 'email' in flash_messages %}
+                                    <p class="text-danger">{{ flash_messages['email'] }}</p>
+                                    {% endif %}
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="password" class="form-control" placeholder="Password *"
+                                        name="password">
+                                    {% if 'password' in flash_messages %}
+                                    <p class="text-danger">{{ flash_messages['password'] }}</p>
+                                    {% endif %}
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="password" class="form-control" placeholder="Confirm Password *"
+                                        name="confirm_password">
+                                    {% if 'confirm_password' in flash_messages %}
+                                    <p class="text-danger">{{ flash_messages['confirm_password'] }}</p>
+                                    {% endif %}
+                                </div>
+                                <select class="form-control" aria-label="Small example" id="role" name="role">
+                                    <option selected value="client">Client</option>
+                                    <option value="chef">Chef</option>
+                                </select>                                                              
+                                {% if 'role' in flash_messages %}
+                                <p class="text-danger">{{ flash_messages['role'] }}</p>
+                                {% endif %}
+                            </div>
+                            <div class="regerv_btn">
+                                <button type="submit" class="btn_4">SignUp</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="{{url_for('static', filename='Js/jquery-1.12.1.min.js')}}"></script>
+    <!-- popper js -->
+    <script src="{{url_for('static', filename='Js/popper.min.js')}}"></script>
+    <!-- bootstrap js -->
+    <script src="{{url_for('static', filename='Js/bootstrap.min.js')}}"></script>
+    <!-- easing js -->
+    <script src="{{url_for('static', filename='Js/magnific-popup.js')}}"></script>
+    <!-- swiper js -->
+    <script src="{{url_for('static', filename='Js/swiper.min.js')}}"></script>
+    <!-- swiper js -->
+    <script src="{{url_for('static', filename='Js/masonry.pkgd.js')}}"></script>
+    <!-- particles js -->
+    <script src="{{url_for('static', filename='Js/owl.carousel.min.js')}}"></script>
+    <!-- swiper js -->
+    <script src="{{url_for('static', filename='Js/slick.min.js')}}"></script>
+    <script src="{{url_for('static', filename='Js/gijgo.min.js')}}"></script>
+    <script src="{{url_for('static', filename='Js/jquery.nice-select.min.js')}}"></script>
+    <!-- custom js -->
+    <script src="{{url_for('static', filename='Js/custom.js')}}"></script>
+</body>
+
+</html>

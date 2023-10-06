@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HOME CHEF</title>
+    <link rel="icon" href="img/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/bootstrap.min.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/animate.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/owl.carousel.min.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/themify-icons.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/flaticon.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/magnific-popup.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/slick.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/gijgo.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/nice-select.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/all.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <!-- style CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Css/style.css') }}">
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="/chefs">
+                            <img src="{{url_for('static', filename='/img/logo.png')}}" style="height: 100px;" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/chefs">Chefs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/food_menu">Menu</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_btn">
+                            <a href="/login" class="btn_1 d-none d-sm-block">login</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+    <!--::exclusive_item_part end::-->
+    <!-- about part end-->
+
+    <!-- intro_video_bg start-->
+    <section class="intro_video_bg" style="margin-top: 140px; height: 300px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro_video_iner text-center">
+                        <h2>Our Experience Chefs</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::chefs_part start::-->
+    <section class="chefs_part blog_item_section section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="section_tittle">
+                        <p>Team Member</p>
+                        <h2>Our Experience Chefs</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static', filename='/img/team/chefs_1.jpg' )}}" alt="..." height=450px>
+                        </div>
+                        <div class="single_blog_text text-center">
+                            <h3>Adam Billiard 🇫🇷</h3>
+                            <p>Chef Master</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                <a href="#"> <i class="fa fa-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static', filename='/img/team/chefs_2.jpg' )}}" alt="..." height=450px>
+                        </div>
+                        <div class="single_blog_text text-center">
+                            <h3>John 🇫🇷</h3>
+                            <p>Chef Master</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="fa fa-facebook"></i>
+                                    <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                    <a href="#"> <i class="fa fa-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static', filename='/img/team/chefs_3.jpg' )}}" alt="..." height=450px>
+                        </div>
+                        <div class="single_blog_text text-center">
+                            <h3>Justin  🇫🇷</h3>
+                            <p>Chef Master</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                <a href="#"> <i class="fa fa-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 d-none d-sm-block d-lg-none">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="img/team/chefs_1.png" alt="..." height=450px>
+                        </div>
+                        <div class="single_blog_text text-center">
+                            <h3>Justin </h3>
+                            <p>Chef Master</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="ti-facebook"></i> </a>
+                                <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                                <a href="#"> <i class="ti-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static', filename='/img/team/chefs_4.jpg' )}}" alt="..." height=450px>
+                        </div>
+                        <div class="single_blog_text text-center">
+                            <h3>Adam Billiard  🇮🇹</h3>
+                            <p>Chef Master</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                <a href="#"> <i class="fa fa-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static', filename='/img/team/chefs_5.jpg' )}}" alt="..." height=450px>
+                        </div>
+                        <div class="single_blog_text text-center">
+                            <h3>Eric 🇮🇹</h3>
+                            <p>Chef Master</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="fa fa-facebook"></i>
+                                    <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                    <a href="#"> <i class="fa fa-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static', filename='/img/team/chefs_6.jpg' )}}" alt="..." height=450px>
+                        </div>
+                        <div class="single_blog_text text-center">
+                            <h3>Justin 🇮🇹</h3>
+                            <p>Chef Master</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                <a href="#"> <i class="fa fa-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 d-none d-sm-block d-lg-none">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="img/team/chefs_1.png" alt="..." height=450px>
+                        </div>
+                        <div class="single_blog_text text-center">
+                            <h3>Justin </h3>
+                            <p>Chef Master</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="ti-facebook"></i> </a>
+                                <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                                <a href="#"> <i class="ti-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static', filename='/img/team/chefs_7.jpg' )}}" alt="..." height=450px>
+                        </div>
+                        <div class="single_blog_text text-center">
+                            <h3>Adam Billiard  🇹🇷</h3>
+                            <p>Chef Master</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                <a href="#"> <i class="fa fa-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static', filename='/img/team/chefs_8.jpg' )}}" alt="..." height=450px>
+                        </div>
+                        <div class="single_blog_text text-center">
+                            <h3> Burak Özdemir 🇹🇷</h3>
+                            <p>Chef Master</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="fa fa-facebook"></i>
+                                    <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                    <a href="#"> <i class="fa fa-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="{{url_for('static', filename='/img/team/chefs_9.jpg' )}}" alt="..." height=450px>
+                        </div>
+                        <div class="single_blog_text text-center">
+                            <h3>Justin  🇹🇷</h3>
+                            <p>Chef Master</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                <a href="#"> <i class="fa fa-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 d-none d-sm-block d-lg-none">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="img/team/chefs_1.png" alt="..."height=450px>
+                        </div>
+                        <div class="single_blog_text text-center">
+                            <h3>Justin </h3>
+                            <p>Chef Master</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="ti-facebook"></i> </a>
+                                <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                                <a href="#"> <i class="ti-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-sm-6 col-md-3 col-lg-4">
+                    <div class="single-footer-widget footer_1">
+                        <h4>About Us</h4>
+                        <p>Heaven fruitful doesn't over for these fruitful doe over days
+                            appear creeping seasons sad behold ath of it fly signs bearing
+                            be one blessed after.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 col-md-3 col-lg-4">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Contact us</h4>
+                        <div class="contact_info">
+                            <p><span> Address :</span>Hath of it fly signs bear be one blessed after </p>
+                            <p><span> Phone :</span> +2 36 265 (8060)</p>
+                            <p><span> Email : </span>info@colorlib.com </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 col-md-4 col-lg-4">
+                    <div class="single-footer-widget footer_3">
+                        <h4>Newsletter</h4>
+                        <p>Heaven fruitful doesn't over lesser in days. Appear creeping seas</p>
+                        <form action="#">
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder='Email Address'
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+                                    <div class="input-group-append">
+                                        <button class="btn" type="button"><i class="fa fa-paper-plane"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright_part_text">
+                <div class="row">
+                    <div class="col-lg-8">
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="copyright_social_icon text-right">
+                            <a href="#"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="{{url_for('static', filename='Js/jquery-1.12.1.min.js')}}"></script>
+    <!-- popper js -->
+    <script src="{{url_for('static', filename='Js/popper.min.js')}}"></script>
+    <!-- bootstrap js -->
+    <script src="{{url_for('static', filename='Js/bootstrap.min.js')}}"></script>
+    <!-- easing js -->
+    <script src="{{url_for('static', filename='Js/magnific-popup.js')}}"></script>
+    <!-- swiper js -->
+    <script src="{{url_for('static', filename='Js/swiper.min.js')}}"></script>
+    <!-- swiper js -->
+    <script src="{{url_for('static', filename='Js/masonry.pkgd.js')}}"></script>
+    <!-- particles js -->
+    <script src="{{url_for('static', filename='Js/owl.carousel.min.js')}}"></script>
+    <!-- swiper js -->
+    <script src="{{url_for('static', filename='Js/slick.min.js')}}"></script>
+    <script src="{{url_for('static', filename='Js/gijgo.min.js')}}"></script>
+    <script src="{{url_for('static', filename='Js/jquery.nice-select.min.js')}}"></script>
+    <!-- custom js -->
+    <script src="{{url_for('static', filename='Js/custom.js')}}"></script>
+</body>
+
+</html>
